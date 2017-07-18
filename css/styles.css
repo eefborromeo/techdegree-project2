@@ -366,7 +366,7 @@ a:hover {
 
   .footer-nav {
     display: inherit;
-    width: 40%;
+    width: 50%;
     float: right;
   }
 
@@ -375,7 +375,7 @@ a:hover {
   }
 
   .footer-nav a {
-    padding-left: 15px;
+    padding-left: 10px;
     font-size: 0.875rem;
   }
 }
@@ -446,5 +446,10 @@ a:hover {
     padding-bottom: 10px;
   }
 
+  .footer-nav {
+    display: inherit;
+    width: 30%;
+    float: right;
+  }
 
 }
