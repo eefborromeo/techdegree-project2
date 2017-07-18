@@ -116,12 +116,7 @@ a:hover {
 #portfolio,
 #interests {
   background-color: #ffffff;
-  padding: 30px 0 25px 0;
-  width: 100%;
-}
-
-#portfolio h3 {
-  padding-bottom: 16px;
+  padding: 30px 0;
 }
 
 #interests {
@@ -134,27 +129,24 @@ a:hover {
   padding-top: 40px;
   border-top: 1px solid rgb(189, 189, 189);
 }
-.main-content {
-  max-width: 90%;
-  margin: auto;
-}
 
 .main-content h2 {
   font-size: 1.125rem;
 }
 
 .main-content img {
-  max-width: 100%;
+  max-width: 95%;
   margin: auto;
-  margin: 15px 0 10px 0;
+  padding-top: 25px;
 }
 
 .main-content p {
+  width: 85%;
+  margin: auto;
   color: rgba(74, 74, 74, 0.65);
   font-size: 1rem;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  padding-bottom: 5px;
 }
 
 .main-content ul {
@@ -315,20 +307,10 @@ a:hover {
   }
 
   #portfolio-content li {
-    width: 48%;
-    display: inline-grid;
-    margin: auto;
-  }
-
-  #portfolio-content li:nth-child(2n+1) {
-    clear: left;
-    margin: 0 10px 10px 10px;
-  }
-
-  #portfolio-content p {
-    max-width: 90%;
-    margin: auto;
-    padding-bottom: 15px;
+    width: calc(140% / 3);
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
   }
 
   #interests {
@@ -432,9 +414,13 @@ a:hover {
   ***********************/
 
   #portfolio-content li {
-    width: 31%;
-    display: inline-grid;
-    margin: auto;
+    width: calc(120% / 4);
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  #portfolio-content p {
+    font-size: 0.875rem;
   }
 
   .interest-details,
