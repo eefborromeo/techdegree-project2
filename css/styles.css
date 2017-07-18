@@ -1,0 +1,459 @@
+/******************
+  General Layout
+*******************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Cabin', Sans-Serif;
+  background-color: #f05858;
+}
+
+h1,
+h2,
+h3 {
+font-family: 'Roboto Condensed', Sans-Serif;
+}
+
+h1 {
+  font-size: 1.4375em;
+  margin: 20px 0;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+a {
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 400;
+}
+
+/******************
+  Home
+*******************/
+
+#home {
+  margin: auto;
+  font-size: 1.125rem;
+  padding-bottom: 20px;
+}
+
+/******************
+  Navigation
+*******************/
+
+.main-nav {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-nav li {
+  list-style: none;
+  margin: auto;
+  margin-bottom: 5px;
+  max-width: 90%;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.main-nav a {
+  font-size: 1rem;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #707070;
+}
+
+/******************
+  Profile
+*******************/
+
+.profile {
+  max-width: 90%;
+  margin: auto;
+}
+
+.profile-img {
+  max-width: 70%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.profile p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/******************
+  Portfolio & Interests
+*******************/
+
+#portfolio,
+#interests {
+  background-color: #ffffff;
+  padding: 30px 0 25px 0;
+  width: 100%;
+}
+
+#portfolio h3 {
+  padding-bottom: 16px;
+}
+
+#interests {
+  padding-bottom: 50px;
+}
+
+#interests h3 {
+  width: 85%;
+  margin: auto;
+  padding-top: 40px;
+  border-top: 1px solid rgb(189, 189, 189);
+}
+.main-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+.main-content h2 {
+  font-size: 1.125rem;
+}
+
+.main-content img {
+  max-width: 100%;
+  margin: auto;
+  margin: 15px 0 10px 0;
+}
+
+.main-content p {
+  color: rgba(74, 74, 74, 0.65);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+.main-content ul {
+  list-style: none;
+}
+
+.interest-details {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.interest-list {
+  width: 60%;
+  margin: auto;
+}
+
+.interest-list li {
+  line-height: 1.5;
+}
+
+/******************
+  Contact
+*******************/
+
+#contact {
+  max-width: 95%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+#contact h3 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.contact-info {
+  padding-top: 5px;
+}
+
+.contact-details p {
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  display: inline;
+  padding-left: 15px;
+}
+
+/******************
+  Footer
+*******************/
+
+.footer-name,
+.top {
+  display: inline-block;
+}
+
+.footer-name {
+  letter-spacing: normal;
+  font-size: 1rem;
+  float: left;
+}
+
+.top {
+  letter-spacing: normal;
+  font-size: 0.875em;
+  float: right;
+}
+
+#footer {
+  max-width: 85%;
+  margin: auto;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid rgb(113, 112, 112);
+}
+
+.footer-nav {
+  display: none;
+}
+
+/******************
+  Clearfix
+*******************/
+
+.clearfix::after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/******************
+  Media Queries
+*******************/
+
+/******************
+  Tablets
+*******************/
+
+@media screen and (min-width: 768px) {
+
+  /******************
+    Home
+  *******************/
+
+  #home {
+    padding-bottom: 25px;
+  }
+
+  .heading h1 {
+    margin-top: 50px;
+  }
+
+  /******************
+    Navigation
+  *******************/
+
+  .main-nav li {
+    display: inline-block;
+    background-color: inherit;
+  }
+
+  .main-nav a {
+    padding: 0 25px;
+    color: #ffffff;
+  }
+
+  /******************
+    Profile
+  *******************/
+
+  .profile p {
+    float: left;
+    max-width: 60%;
+    text-align: left;
+    font-size: 1.25rem;
+    padding-right: 30px;
+  }
+
+  .profile-img {
+    float: right;
+    max-width: 40%;
+  }
+
+  /******************
+    Portfolio & Interests
+  *******************/
+
+  #portfolio h3 {
+    padding-top: 10px;
+  }
+
+  #portfolio-content li {
+    width: 48%;
+    display: inline-grid;
+    margin: auto;
+  }
+
+  #portfolio-content li:nth-child(2n+1) {
+    clear: left;
+    margin: 0 10px 10px 10px;
+  }
+
+  #portfolio-content p {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+
+  #interests {
+    padding-bottom: 50px;
+  }
+
+  .interest-details {
+    width: 30%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .interest-list {
+    width: 80%;
+  }
+
+  .interest-list li {
+    line-height: 1.5;
+  }
+
+  /******************
+    Contact
+  *******************/
+
+  #contact {
+    width: 60%;
+    padding-bottom: 50px;
+  }
+
+  #contact h3 {
+    padding-bottom: 20px;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+
+  .top {
+    display: none;
+  }
+
+  /******************
+    Footer
+  *******************/
+
+  #footer {
+    max-width: 90%;
+    padding-top: 10px;
+    padding-bottom: 55px;
+    margin-bottom: 10px;
+  }
+
+  .footer-nav {
+    display: inherit;
+    width: 40%;
+    float: right;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+  }
+
+  .footer-nav a {
+    padding-left: 15px;
+    font-size: 0.875rem;
+  }
+}
+
+/******************
+  Desktops
+*******************/
+
+@media screen and (min-width: 1024px) {
+
+  /******************
+    Navigation
+  *******************/
+
+  .main-nav {
+    float: right;
+  }
+  .heading h1 {
+    float: left;
+    margin: 25px 0;
+  }
+
+  .heading {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .main-nav a {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+
+  /***********************
+    Portfolio & Interests
+  ***********************/
+
+  #portfolio-content li {
+    width: 31%;
+    display: inline-grid;
+    margin: auto;
+  }
+
+  .interest-details,
+  .interest-list {
+    width: 30%;
+    font-size: 1.5rem;
+  }
+
+  .interest-list {
+    width: 80%;
+  }
+
+  /***********
+    Footer
+  ***********/
+
+  #footer {
+    padding-bottom: 10px;
+  }
+
+
+}
