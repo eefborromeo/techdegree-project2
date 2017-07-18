@@ -161,20 +161,20 @@ a:hover {
   list-style: none;
 }
 
-.interest-details {
-  width: 50%;
-  margin: auto;
-  text-align: left;
-  font-size: 1.2rem;
-}
-
+.interest-details,
 .interest-list {
   width: 60%;
   margin: auto;
+  font-size: 1.25rem;
 }
 
-.interest-list li {
-  line-height: 1.5;
+.interest-details p {
+  text-align: center;
+}
+
+.interest-list {
+  width: 30%;
+  text-align: left;
 }
 
 /******************
@@ -335,19 +335,19 @@ a:hover {
     padding-bottom: 50px;
   }
 
-  .interest-details {
+  .interest-details,
+  .interest-list {
     width: 30%;
     margin: auto;
-    text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+  }
+
+  .interest-details p {
+    text-align: center;
   }
 
   .interest-list {
-    width: 80%;
-  }
-
-  .interest-list li {
-    line-height: 1.5;
+    width: 50%;
   }
 
   /******************
@@ -441,11 +441,15 @@ a:hover {
   .interest-list {
     width: 30%;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .interest-details p {
+    text-align: center;
   }
 
   .interest-list {
-    width: 80%;
+    width: 50%;
   }
 
   /***********
