@@ -278,8 +278,20 @@ a:hover {
 
   .main-nav a {
     padding: 0 25px;
+  }
+
+  .main-nav a:link,
+  .footer-nav a:link,
+  .main-nav a:visited,
+  .footer-nav a:visited {
     color: #ffffff;
   }
+
+  .main-nav a:hover,
+  .footer-nav a:hover,
+  a:hover {
+      color: #707070;
+    }
 
   /******************
     Profile
